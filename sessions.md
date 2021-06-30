@@ -24,24 +24,24 @@ Sessions are compared to but are not the same as cookies, because cookies store 
 ### Prerequisites
 One needs to have the following before proceeding with the article.
 1. Be familiar with PHP basic concepts.
-2. A text editor of your choice installed. I will be using Visual Studio code which you can install from [here](https://code.visualstudio.com/download) (if you already don't have it).
+2. Install a text editor that you prefer. Code in this article was written and run using VisualStudio code that can be downloaded [here](https://code.visualstudio.com/download) (if you already don't have it).
 2. Either [xampp](https://www.apachefriends.org/download.html) or [wampp](https://sourceforge.net/projects/wampserver/) local server installed, for PHP to run.
 
-### Table of contents
-1. What is a PHP session.
+### What will be covered
+1. What a PHP Session is.
 2. How to Start a session.
 3. Accessing a created session.
 4. How to update a set session.
 5. How to destroy a session.
 
-### What is a PHP Session?
+### What a PHP Session is
 A PHP Session is in simple terms, a data storage for user's data that can be rendered across several pages of an application or website. A unique Session identifier or ID is used to identify the particular user the information references to.
 Therefore, where a session ID is missing, it implies no session has been created yet. Hence, PHP is prompted to initiate one. 
 We will learn how to start sessions and create session variables shortly.
 
 We make use of Session variables that is written as **$_SESSION** (which is a PHP superglobal. Go [here](https://www.w3schools.com/php/php_superglobals.asp) and [Understanding PHP superglobals](https://www.section.io/engineering-education/php-superglobals) to find out more about superglobals.) to store one particular user's information.
 
-### How to start a Session in PHP
+### How to Start a session
 Remember a user's information needs to be stored in session variables before they can be accessed across multiple pages? So, before you even use this variable, you will be required to start a session by invoking a PHP function called session_start().
 This function creates a new session, or restarts an existing one then generates for the user a unique session ID, through a GET or POST request. These two requests are extensively covered [here](https://www.w3schools.com/php/php_forms.asp). 
 
@@ -73,7 +73,7 @@ Create a ***details.php*** file and write the following code.
 </html>
 ```
 
-### Accessing a set session variable
+### Accessing a created session
 Now that we already have our sessions in the preceding section set, we may want to access them just to be sure the sessions were set successfully.
 Create an **accessdetails.php** file that will access the previously set session variables.
 We introduce a conditional statement (you may want to follow [this](https://www.w3schools.com/php/php_if_else.asp) link, which talks more on PHP conditional statements) and an **isset()** function to check whether the session variables were really set.
@@ -128,7 +128,7 @@ Sorry.. no such session variables set!
 
 >NOTE: Ensure you place a semicolon at the end of a PHP statement to avoid syntax errors that prevent your code from running.
 
-### Updating a PHP Session.
+### How to update a set session.
 Incase you want to change a session variable to a different value instead of the existing one, follow the example below.
 Replace the new session data in this case; **name**, in the details.php file.
 
@@ -164,10 +164,11 @@ You changed your name to Liz Muganga!
 By now, you definitely have a good understanding of PHP Sessions. If not, please go through the previously covered sections of this article a second time and you will see everything making better sense.
 Remember, you learn best by doing!.
 
-### How to destroy a PHP Session
+### How to destroy a session.
 The whole point of using sessions was to store user's data and make it accessible throughout several pages of the application. 
 In other words, the server is able to know who is accessing the application at that particular point in time, by referencing the unique Session Identifier used, when creating the session variable.
 Closing the browser or even logging out of the system at some point, loggs us out and redirects us back to the login page mostly.This is as a result of the session variable being destroyed. Implementing a logout functionality is beyond the scope of this article but you can check out [this](https:youtu.be/O0Ky0tKvsJ8) tutorial that clearly shows how to go about it.
+Incase you want to see how logout functionality in PHP is implemented, watch [this](https:youtu.be/O0Ky0tKvsJ8) that has a precise step by step guide on how to implement a logout functionality.
 
 #### Functions we may use when destroying a session.
 1. The **unset()** function. This function destroys one particular session variable by passing in the session variable we want to destroy. We will soon see how.
