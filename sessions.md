@@ -23,15 +23,15 @@ Sessions are compared to but are not the same as cookies, because cookies store 
 
 ### Prerequisites
 One needs to have the following before proceeding with the article.
-1. A basic understanding of the PHP programming language.
+1. Be familiar with PHP basic concepts.
 2. A text editor of your choice installed. I will be using Visual Studio code which you can install from [here](https://code.visualstudio.com/download) (if you already don't have it).
 2. Either [xampp](https://www.apachefriends.org/download.html) or [wampp](https://sourceforge.net/projects/wampserver/) local server installed, for PHP to run.
 
 ### Table of contents
 1. What is a PHP session.
-2. How to start a session in PHP.
+2. How to Start a session.
 3. Accessing a created session.
-4. Updating a PHP session.
+4. How to update a set session.
 5. How to destroy a session.
 
 ### What is a PHP Session?
