@@ -41,7 +41,7 @@ We will learn how to start sessions and create session variables shortly.
 
 We make use of Session variables that is written as $_SESSION(which is a global variable. Go [here](https://www.w3schools.com/php/php_superglobals.asp) to find out more about global variables.) to store one particular user's information.
 
-###How to start and access a Session in PHP
+### How to start a Session in PHP
 Remember a user's information needs to be stored in session variables before they can be accessed across multiple pages? So, before you even use this variable, you will be required to start a session by invoking a PHP function called session_start().
 This function creates a new session, or restarts an existing one then generates for the user a unique session ID, through a GET or POST request. 
 
@@ -70,7 +70,7 @@ Create a details.php file and write the following code.
 </html>
 ```
 
-###Accessing a set session variable
+### Accessing a set session variable
 Now that we have already set our sessions in the preceding section, we may want to access them just to be sure the sessions were set successfully.
 Create a accessdetails.php file that will access the previosly set session variables.
 We introduce a conditional statement (you may want to follow [this](https://www.w3schools.com/php/php_if_else.asp) link, which talks more on php conditional statements) and an isset() function to check if the session variables were really set.
@@ -124,7 +124,7 @@ Sorry.. no such session variables set!
 
 > NOTE: Ensure you place a semicolon at the end of a php statement to avoid syntactical errors that prevent your code from running.
 
-###Updating a PHP Session.
+### Updating a PHP Session.
 Incase you want to change a session variable to a different value instead of the existing one, follow the following example below.
 Replace the new session data in this case;the name, in the details.php file.
 
@@ -199,12 +199,12 @@ The specific user data is wiped off the session variable if the unset function i
 from the session variable when the session_destroy() function is called. 
 
 
-###Conclusion
+### Conclusion
 Sessions to a beginner may sound hard of a concept to grasp, it is only normal to feel that way. This article therefore, is meant to simplify this concept and take you through a step by step learning process until you eventually get a hung of it.
 
 Below you can find links to other sources you may want to look at to make your understanding even better.
 
-####Further reading
+#### Further reading
 - [w3schools PHP Sessions](https://www.w3schools.com/php/php_sessions.asp).
 - [Tutorial Republic](https://www.tutorialrepublic.com/php-tutorial/php-sessions.php).
 - [Basic usage of PHP sessions from PHP Manual](https://www.php.net/manual/en/session.examples.basic.php).
