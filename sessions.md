@@ -173,7 +173,7 @@ Incase you want to see how logout functionality in PHP is implemented, watch [th
 #### Functions we may use when destroying a session.
 1. The **unset()** function. This function destroys one particular session variable by passing in the session variable we want to destroy. We will soon see how.
 
-2. The **session_destroy()** function. This function destroys **all** previously set session variables and it does not require passing any parameters to it.
+2. **session_destroy()**. This function destroys **all** previously set session variables and it does not require passing any parameters to it.
 
 The following code shows how how to destroy a php session.
 ```php
@@ -205,7 +205,7 @@ The specific user data is wiped off the session variable if the **unset()** func
 
 
 ### Conclusion
-Sessions to a beginner may sound hard of a concept to grasp, it is only normal to feel that way. This article therefore, is meant to simplify this concept and take you through a step by step learning process until you eventually get a hung of it which by now I believe you have. Feel free to go over it another time until you are comfortable enough.
+Sessions to a beginner may sound hard of a concept to grasp, it is only normal to feel that way. This article therefore, is meant to simplify this concept and take you through a step by step learning process until you eventually get a hung of it which by now I believe you have. If not yet, you could always go over it another time until you are sure you got it well.
 
 Below you can find links to other sources you may want to look at to make your understanding even better.
 
