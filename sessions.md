@@ -39,7 +39,7 @@ A PHP Session is in simple terms, a data storage for user's data that can be ren
 Therefore, where a session ID is missing, it implies no session has been created yet. Hence, PHP is prompted to initiate one. 
 We will learn how to start sessions and create session variables shortly.
 
-We make use of Session variables that is written as **$_SESSION** (which is a PHP superglobal. Go [here](https://www.w3schools.com/php/php_superglobals.asp) and [Understanding PHP superglobals](https://www.section.io/engineering-education/php-superglobals) to find out more about superglobals.) to store one particular user's information.
+We make use of Session variables that is written as **$_SESSION** (which is a PHP superglobal. Go [here](https://www.w3schools.com/php/php_superglobals.asp) and [Understanding PHP superglobals](https://www.section.io/engineering-education/php-superglobals/ to find out more about superglobals) to store one particular user's information.
 
 ### How to Start a session
 Remember a user's information needs to be stored in session variables before they can be accessed across multiple pages? So, before you even use this variable, you will be required to start a session by invoking a PHP function called session_start().
