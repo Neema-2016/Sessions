@@ -47,13 +47,12 @@ This function creates a new session, or restarts an existing one then generates 
 
 >NOTE: It is always important to place the **session_start()** function immediately after the ***<?php*** tag that comes before the HTML tags and at the beginning of your script else its functionality will not be implemented.
 
-Create a ***details.php*** file and write the following code.
+Create a **details.php** file and write the following code.
 
 #### See below how starting a session is implemented
 
 ```php
 <?php 
-
   //Starting session
   session_start();
 ?>
@@ -68,9 +67,18 @@ Create a ***details.php*** file and write the following code.
       
       echo "Successfully set the session variables.";
     ?>
-	  
   </body>
 </html>
+```
+
+You will expect the following output.
+Output:
+
+```bash
+Output:
+
+Successfully set the session variables.
+
 ```
 
 ### Accessing a created session
@@ -86,16 +94,15 @@ We introduce a conditional statement (you may want to follow [this](https://www.
   //Note that we call the session_start() function here also before proceeding 
   session_start();
 ?>
-
 <!DOCTYPE html>
 <html>
   <body>
 
     <?php
-      
+    
       //conditional statement with isset() function to check if session is set
-      if(isset(($_SESSION["name"]) and ($_SESSION["hobby"]))){
-	echo "Hi, '.$_SESSION["name"].', glad to know you enjoy '.$_SESSION["hobby"]. ' too!"; 
+      if(isset($_SESSION["name"]) && isset($_SESSION["hobby"])){
+	echo "Hi ".$_SESSION["name"]. ", glad to know you enjoy ".$_SESSION["hobby"]. " too!"; 
       }
 
       //if session variables do not exist, this will run instead
@@ -145,7 +152,7 @@ $_SESSION["name"] = "Liz Muganga";
 <html>
   <body>
     <?php
-    echo "You changed your name to '.$_SESSION["name"].'!";
+    echo "You changed your name to ".$_SESSION["name"]."!";
     ?>
   </body>
 </html>
