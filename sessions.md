@@ -1,17 +1,17 @@
 ---
 layout: engineering-education
-status: publish
-published: true
+status: 
+published: 
 url: /getting-started-with-php-sessions/
 title: Getting started with PHP Sessions
-description: This article will bring the readerr to a better understanding of what PHP Sessions are, why they are used and how they can be implemented.
+description: This article will bring the reader to a better understanding of what PHP Sessions are, why they are used and how they can be implemented.
 author: neema-muganga
-date: 2021-03-21T00:00:00-13:00
+date: 2021-07-01T00:00:00-13:00
 topics: [Languages]
 excerpt_separator: <!--more-->
 images:
-  - url: /engineering-education/working-with-lambda-expressions-and-anonymous-functions/hero.png
-    alt: Lambda expressions and Anonymous functions image
+  - url: /engineering-education/getting-started-with-php-sessions/hero.png
+    alt: Screen with written code image
 ---
 This article will bring the reader to a better understanding of what PHP sessions are, why they are used and how they can be implemented.
 
