@@ -174,8 +174,8 @@ Remember, you learn best by doing!.
 ### How to destroy a session.
 The whole point of using sessions was to store user's data and make it accessible throughout several pages of the application. 
 In other words, the server is able to know who is accessing the application at that particular point in time, by referencing the unique Session Identifier used, when creating the session variable.
-Closing the browser or even logging out of the system at some point, loggs us out and redirects us back to the login page mostly.This is as a result of the session variable being destroyed. Implementing a logout functionality is beyond the scope of this article but you can check out [this](https:youtu.be/O0Ky0tKvsJ8) tutorial that clearly shows how to go about it.
-Incase you want to see how logout functionality in PHP is implemented, watch [this](https:youtu.be/O0Ky0tKvsJ8) that has a precise step by step guide on how to implement a logout functionality.
+Closing the browser or even logging out of the system at some point, loggs us out and redirects us back to the login page mostly.This is as a result of the session variable being destroyed.
+Incase you want to see how the logout functionality in PHP is implemented, watch [this](https://www.youtube.com/watch?v=O0Ky0tKvsJ8) that has a precise step by step guide on how to implement a logout functionality as this article does not talk much on it.
 
 #### Functions we may use when destroying a session.
 1. The **unset()** function. This function destroys one particular session variable by passing in the session variable we want to destroy. We will soon see how.
